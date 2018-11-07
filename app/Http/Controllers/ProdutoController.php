@@ -46,7 +46,7 @@ class ProdutoController extends Controller
         $produto->quantidade = $request->input('quantidade');
         $produto->preco = $request->input('preco');
         if($produto->save()){
-            return redirect('produto');
+            return redirect()->route('produto');
         }
     }
 
@@ -83,7 +83,7 @@ class ProdutoController extends Controller
     public function update(ProdutoRequest $request, $id)
     {
         $produto = Produto::find($id)->update($request->all());
-        return redirect('produto');
+        return redirect()->route('produto');
     }
 
     /**
@@ -95,6 +95,6 @@ class ProdutoController extends Controller
     public function destroy($id)
     {
         Produto::find($id)->delete();
-        return redirect('produto');
+        return redirect()->route('produto');
     }
 }

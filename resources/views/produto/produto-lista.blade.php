@@ -13,6 +13,7 @@
             </tr>
         </thead>
         <tbody>
+
             @foreach($produtos as $produto)
             <tr>
                 <td>{{$produto->id}}</td>
@@ -25,4 +26,5 @@
             @endforeach
         </tbody>
     </table>
+     <a href="/produto/create" class="btn btn-success btn-block">Inserir Produto</a>
 @endsection
