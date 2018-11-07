@@ -1,1 +1,1 @@
-# controle-de-estoque-simples---laravel
+# controle-de-estoque-simples--laravel
